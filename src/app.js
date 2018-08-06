@@ -17,6 +17,7 @@ const calcTempo = buffer => {
   }
   const mt = new MusicTempo(audioData);
 
+  // eslint-disable-next-line no-console
   console.log(mt.tempo);
   // console.log(mt.beats);
 };
