@@ -5,7 +5,7 @@
   "main": "./src/app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "transpile": "./node_modules/.bin/babel --presets es2015 ./src/app.js --out-file ./dist/bundled.js",
+    "transpile": "./node_modules/.bin/babel --presets es2015 ./src/app.js --out-file ./dist/bundled.js && npx minify-all ./dist",
     "start": "node ./dist/bundled.js",
     "lint": "eslint '**/*.{js,jsx}' --quiet",
     "format": "prettier --write '**/*.{js,jsx}'"
@@ -19,8 +19,10 @@
     "eslint-config-airbnb": "^17.0.0",
     "eslint-config-prettier": "^2.9.0",
     "eslint-plugin-prettier": "^2.6.2",
+    "minify-all": "^1.2.2",
     "music-tempo": "^1.0.3",
     "prettier": "^1.14.0",
+    "uglify-js": "^3.4.6",
     "web-audio-api": "^0.2.2"
   },
   "presets": [
