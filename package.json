@@ -5,7 +5,7 @@
   "main": "./src/app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "transpile": "./node_modules/.bin/babel --presets es2015 ./src/app.js --out-file ./dist/bundled.js && npx minify-all ./dist",
+    "transpile": "npx babel --presets es2015 ./src/app.js --out-file ./dist/bundled.js && npx minify-all ./dist",
     "start": "node ./dist/bundled.js",
     "lint": "eslint '**/*.{js,jsx}' --quiet",
     "format": "prettier --write '**/*.{js,jsx}'"
