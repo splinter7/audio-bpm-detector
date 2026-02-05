@@ -30,7 +30,7 @@
     "stage-2"
   ],
   "devDependencies": {
-    "eslint": "^4.19.1",
+    "eslint": "^9.39.2",
     "eslint-config-airbnb-base": "^13.0.0",
     "eslint-plugin-import": "^2.12.0"
   }
