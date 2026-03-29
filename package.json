@@ -23,7 +23,7 @@
     "music-tempo": "^1.0.3",
     "prettier": "^1.14.0",
     "uglify-js": "^3.4.6",
-    "web-audio-api": "^0.2.2"
+    "web-audio-api": "^1.2.0"
   },
   "presets": [
     "es2015",
